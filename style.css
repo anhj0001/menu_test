@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.kat_overskrift {
+  text-align: center;
+  padding: 20px;
+}
 .forside {
   text-align: center;
   font-size: 3rem;
@@ -32,16 +36,24 @@ img {
 .produkt_container {
   padding: 30px;
   gap: 10px;
+  scale: 95%;
 }
 
+article {
+  position: relative;
+}
 /* Udsolgt banner */
 .sold_out {
-  background-color: rgba(0, 0, 0, 0.505);
-  position: relative;
+  background-color: rgba(255, 0, 0, 0.793);
+  position: absolute;
   top: 6%;
-  left: 3%;
+  left: 5%;
   text-align: center;
-  max-width: 90px;
+  padding: 10px;
+}
+
+.sale {
+  display: none;
 }
 
 /* Produktliste billeder */
@@ -84,6 +96,56 @@ a {
 a:hover {
   color: orange;
 }
+
+/* SIZE */
+.purchaseBox {
+  color: #fef9f8;
+  padding: 50px;
+}
+form {
+  margin-top: 20px;
+}
+label {
+  font-weight: bold;
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  gap: 10px;
+}
+button {
+  max-width: 100px;
+}
+.purchaseBox button {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* Infobox */
+.info {
+  margin: 30px;
+  padding: 50px;
+  border: 2px solid orange;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  max-width: 400px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  h3 {
+    margin-bottom: 40px;
+  }
+  dt {
+    line-height: 40px;
+  }
+}
+
+.info dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
 /* MOBILE */
 @media screen and (max-width: 600px) {
   .grid_container {
@@ -97,6 +159,14 @@ a:hover {
   .produkt_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .purchaseBox {
+    color: #fef9f8;
+    padding: 50px;
+    position: relative;
+    top: -25px;
+    left: -50px;
   }
 }
 
@@ -140,7 +210,6 @@ ol {
 }
 
 ol li {
-  border: 2px solid #0d0d0d;
   padding: 20px;
   text-align: center;
   list-style-type: none;

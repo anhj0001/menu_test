@@ -11,12 +11,16 @@ function showProduct(product) {
   console.log(product);
 
   document.querySelector(".brand").textContent = product.brandname;
-
   document.querySelector(".subkat").textContent = product.subcategory;
-
   document.querySelector(".produkt_navn").textContent = product.productdisplayname;
-
   document.querySelector(".price .dkk").textContent = product.price;
+  document.querySelector(".info .productdisplayname").textContent = product.productdisplayname;
+  document.querySelector(".info .id").textContent = product.id;
+  document.querySelector(".info .subcategory").textContent = product.subcategory;
+  document.querySelector(".info .brand").textContent = product.brand;
+  document.querySelector(".info .brandbio").textContent = product.brandbio;
+  document.querySelector(".info .gender").textContent = product.gender;
+  document.querySelector(".info .season").textContent = product.season;
 
   document.querySelector(".produkt_billede img").src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
 }

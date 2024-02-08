@@ -18,6 +18,9 @@ function listProducts(product) {
 
   const myClone = productlist.cloneNode(true);
 
+  if (!product.soldout) {
+    myClone.querySelector(".sold_out").remove();
+  }
   myClone.querySelector(".produktliste_tekst").textContent = product.productdisplayname;
 
   myClone.querySelector(".category").textContent = product.season;
@@ -26,15 +29,7 @@ function listProducts(product) {
 
   myClone.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
 
-  // if (product.soldout) {
-  //   myClone.querySelector("div").classList.add("sold_out");
-  // }
-
   myClone.querySelector(".link").setAttribute("href", "produkt.html?id=" + product.id);
 
   document.querySelector(".grid_container").appendChild(myClone);
-
-  //myClone.querySelector(".link").setAttribute("href", `produkt.html?id=${product.id}`);
-  // Appende
-  // document.querySelector("main").appendChild(myClone);
 }
