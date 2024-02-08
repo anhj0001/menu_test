@@ -13,14 +13,13 @@
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="toj.webp" alt="Logo">
+                <img src="billeder/logo.webp" alt="Logo">
             </a>
         </div>
         <nav>
             <ul class="menu">
                 <li><a href="kategori.html">Kategori</a></li>
                 <li><a href="produktliste.html">Produktliste</a></li>
-                <li><a href="produkt.html">Produkt</a></li>
             </ul>
             <div class="burger">
                 <div class="line"></div>
@@ -31,114 +30,23 @@
     </header>
 
     <main>
-        <article>
-            <div class="produktliste">
-                <h1>PRODUKTLISTE</h1>
-            </div>
-            <div class="produkt_container">
-                <div class="produkt">
-                    <div class="pl_pic">
-                        <a href="produkt.html">
-                            <img src="https://kea-alt-del.dk/t7/images/webp/1000/1531.webp"
-                                alt="Grey Solid Round Neck T-Shirt">
-                        </a>
-                    </div>
-                    <h1>Grey Solid Round Neck T-Shirt</h1>
-                    <div class="price">799,-</div>
-                </div>
+        <div class="grid_container"></div>
+        <template>
+            <article>
+                <p class="sold_out">UDSOLGT</p>
+                <p class="sale"></p>
 
-                <div class="produkt">
-                    <div class="pl_pic">
-                        <a href="produkt.html">
-                            <img src="https://kea-alt-del.dk/t7/images/webp/1000/1165.webp"
-                                alt="Grey Solid Round Neck T-Shirt">
-                        </a>
-                    </div>
-                    <h1>Mean Team India Cricket Jersey</h1>
-                    <div class="price">2495,-</div>
-                </div>
+                <a class="link" href="link kommer her">
+                    <img src="" alt=""></a>
 
-                <div class="produkt">
-                    <div class="pl_pic">
-                        <a href="produkt.html">
-                            <img src="https://kea-alt-del.dk/t7/images/webp/1000/1529.webp"
-                                alt="Grey Solid Round Neck T-Shirt">
-                        </a>
-                    </div>
-                    <h1>Red SJ Tee shoulder pads</h1>
-                    <div class="price">799,-</div>
-                </div>
-
-                <div class="produkt">
-                    <div class="pl_pic">
-                        <a href="produkt.html">
-                            <img src="https://kea-alt-del.dk/t7/images/webp/1000/1531.webp"
-                                alt="Grey Solid Round Neck T-Shirt">
-                        </a>
-                    </div>
-                    <h1>Grey Solid Round Neck T-Shirt</h1>
-                    <div class="price">799,-</div>
-                </div>
-
-                <div class="produkt">
-                    <div class="pl_pic">
-                        <a href="produkt.html">
-                            <img src="https://kea-alt-del.dk/t7/images/webp/1000/1531.webp"
-                                alt="Grey Solid Round Neck T-Shirt">
-                        </a>
-                    </div>
-                    <h1>Grey Solid Round Neck T-Shirt</h1>
-                    <div class="price">799,-</div>
-                </div>
-
-                <div class="produkt">
-                    <div class="pl_pic">
-                        <a href="produkt.html">
-                            <img src="https://kea-alt-del.dk/t7/images/webp/1000/1531.webp"
-                                alt="Grey Solid Round Neck T-Shirt">
-                        </a>
-                    </div>
-                    <h1>Grey Solid Round Neck T-Shirt</h1>
-                    <div class="price">799,-</div>
-                </div>
-
-                <div class="produkt">
-                    <div class="pl_pic">
-                        <a href="produkt.html">
-                            <img src="https://kea-alt-del.dk/t7/images/webp/1000/1531.webp"
-                                alt="Grey Solid Round Neck T-Shirt">
-                        </a>
-                    </div>
-                    <h1>Grey Solid Round Neck T-Shirt</h1>
-                    <div class="price">799,-</div>
-                </div>
-
-                <div class="produkt">
-                    <div class="pl_pic">
-                        <a href="produkt.html">
-                            <img src="https://kea-alt-del.dk/t7/images/webp/1000/1531.webp"
-                                alt="Grey Solid Round Neck T-Shirt">
-                        </a>
-                    </div>
-                    <h1>Grey Solid Round Neck T-Shirt</h1>
-                    <div class="price">799,-</div>
-                </div>
-
-                <div class="produkt">
-                    <div class="pl_pic">
-                        <a href="produkt.html">
-                            <img src="https://kea-alt-del.dk/t7/images/webp/1000/1531.webp"
-                                alt="Grey Solid Round Neck T-Shirt">
-                        </a>
-                    </div>
-                    <h1>Grey Solid Round Neck T-Shirt</h1>
-                    <div class="price">799,-</div>
-                </div>
-            </div>
-
-        </article>
+                <h2 class="produktliste_tekst"></h2>
+                <h3 class="category"></h3>
+                <p class="price">DKK <span class="dkk"></span>,-</p>
+            </article>
+        </template>
     </main>
     <script src="menu.js"></script>
+    <script src="produktliste.js"></script>
 </body>
 
 </html>

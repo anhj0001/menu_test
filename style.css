@@ -3,128 +3,146 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.forside {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 50px;
+  line-height: 10rem;
+}
+
+.stor {
+  font-size: 3rem;
+  transition: 0.4s;
+}
+
+.stor:hover {
+  font-size: 4rem;
+  transition: 0.4s;
+}
+
 html {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
 }
 
 img {
   width: 100%;
 }
+
+.produkt_container {
+  padding: 30px;
+  gap: 10px;
+}
+
+/* Udsolgt banner */
+.sold_out {
+  background-color: rgba(0, 0, 0, 0.505);
+  position: relative;
+  top: 6%;
+  left: 3%;
+  text-align: center;
+  max-width: 90px;
+}
+
+/* Produktliste billeder */
+link:hover {
+  width: 100%;
+  scale: 102%;
+  transition: 0.5s;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 h1 {
   font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  color: aliceblue;
+}
+h2 {
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  color: aliceblue;
+  font-size: 1.3rem;
+}
+h3 {
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  color: aliceblue;
+}
+p {
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  color: aliceblue;
 }
 a {
   font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  color: aliceblue;
 }
-@media screen and (max-width: 800px) {
-  .pl_pic {
-    scale: 85%;
-  }
-  .pl_pic:hover {
-    transition: 0.4s linear;
-    scale: 102%;
-  }
-  .produktliste {
-    font-size: 4cqw;
-    text-align: center;
-    padding: 30px;
-  }
-  .season_container {
+
+a:hover {
+  color: orange;
+}
+/* MOBILE */
+@media screen and (max-width: 600px) {
+  .grid_container {
     display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 70px;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 30px;
   }
 
-  .season a {
-    font-size: 4rem;
-    text-decoration: none;
-    padding: 30px;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    border-radius: 30px;
-  }
-  .season a:hover {
-    color: orange;
-  }
+  /* Produkt siden */
   .produkt_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .overskrift {
-    font-size: 3rem;
-    text-align: center;
-    padding: 30px;
-    font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
-  }
-  .p_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .produkt_billede {
-    scale: 92%;
-  }
-  hr {
-    margin: 0px 10px 70px 10px;
   }
 }
 
-@media screen and (min-width: 800px) {
-  .pl_pic {
-    scale: 85%;
-  }
-  .pl_pic:hover {
-    transition: 0.4s linear;
-    scale: 102%;
-  }
-  .produktliste {
-    font-size: 4cqw;
-    text-align: center;
-    padding: 30px;
-  }
-  .season_container {
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 70px;
-  }
-
-  .season a {
-    font-size: 4rem;
-    text-decoration: none;
-    padding: 30px;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    border-radius: 30px;
-  }
-  .season a:hover {
-    color: orange;
-  }
-  .produkt_container {
+/* TABLET */
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+  .grid_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-    gap: 70px;
-  }
-  .overskrift {
-    font-size: 5rem;
-    text-align: center;
+    gap: 40px;
     padding: 30px;
-    font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
   }
-  .p_container {
+
+  /* Produkt siden */
+  .produkt_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+}
 
-  .produkt_billede {
-    scale: 92%;
+/* DESKTOP */
+@media screen and (min-width: 991px) {
+  .grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 30px;
   }
-  hr {
-    margin: 0px 10px 70px 10px;
+
+  /* Produkt siden */
+  .produkt_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
+}
+
+ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+ol li {
+  border: 2px solid #0d0d0d;
+  padding: 20px;
+  text-align: center;
+  list-style-type: none;
+  font-size: 1.5rem;
 }
