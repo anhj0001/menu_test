@@ -21,8 +21,15 @@ function showProduct(product) {
   document.querySelector(".info .brandbio").textContent = product.brandbio;
   document.querySelector(".info .gender").textContent = product.gender;
   document.querySelector(".info .season").textContent = product.season;
-
   document.querySelector(".produkt_billede img").src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
+
+  if (!product.soldout) {
+    document.querySelector(".sold_out").remove();
+  }
+
+  if (!product.discount) {
+    document.querySelector(".discount2").remove();
+  }
 }
 
 /*
